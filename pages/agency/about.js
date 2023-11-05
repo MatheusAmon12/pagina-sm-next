@@ -23,11 +23,17 @@ const useStyles = makeStyles()((theme) => {
         flexDirection: 'column',
         marginBottom: 20,
       },
-      title: {
+      subTitle: {
         fontWeight: 'bold',
         textShadow: '1.5px 1.5px 1px rgba(72,72,72,0.2)',
         color: theme.palette.primary.main,
-    }
+      },
+      title: {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.8em',
+        },
+        fontWeight: 'bold',
+      }
     }
 })
 
@@ -36,7 +42,7 @@ const About = () => {
     return(
         <TemplateDefault>
             <Container maxWidth='md' className={classes.container}>
-                <Typography component='h1' variant='h3' align='center' color='white'>
+                <Typography component='h1' variant='h3' align='center' color='white' className={classes.title}>
                     Sobre nós
                 </Typography>
             </Container>
@@ -50,7 +56,7 @@ const About = () => {
                             width={300}
                             height={300}
                         />
-                        <Typography component='span' variant='h6' className={classes.title}>
+                        <Typography component='span' variant='h6' className={classes.subTitle}>
                             Lívia Gabriela e Matheus Amon
                         </Typography>
                     </Box>

@@ -12,9 +12,20 @@ import { makeStyles } from 'tss-react/mui'
 
 const useStyles = makeStyles()((theme) => {
   return{
-    buttonColor: {
+    button: {
       color:'white',
-      textDecoration: 'none !important'
+      textDecoration: 'none !important',
+    },
+    toolbar: {
+      [theme.breakpoints.down('sm')]: {
+        display: 'flex',
+        flexDirection: 'column',
+      }
+    },
+    container: {
+      [theme.breakpoints.down('sm')]: {
+        padding: '15px',
+      }
     }
   }
 })
@@ -25,31 +36,33 @@ export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Container maxWidth='lg'>
-            <Toolbar>
+        <Container maxWidth='lg' className={classes.container}>
+            <Toolbar className={classes.toolbar}>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     Agência LM
                 </Typography>
-                <Link href='/'>
-                  <Button color="inherit">
-                    <Typography className={classes.buttonColor}>Home</Typography>
-                  </Button>
-                </Link>
-                <Link  href='/agency/portfolio'>
-                  <Button color="inherit">
-                    <Typography  className={classes.buttonColor}>Portfolio</Typography>
-                  </Button>
-                </Link>
-                <Link  href='/agency/about'>
-                  <Button color="inherit">
-                    <Typography  className={classes.buttonColor}>Sobre</Typography>
-                  </Button>
-                </Link>
-                <Link  href='/agency/contacts'>
-                  <Button color="inherit">
-                    <Typography  className={classes.buttonColor}>Contatos</Typography>
-                  </Button>
-                </Link>
+                <Box>
+                  <Link href='/'>
+                    <Button color="inherit">
+                      <Typography className={classes.button}>Home</Typography>
+                    </Button>
+                  </Link>
+                  <Link  href='/agency/portfolio'>
+                    <Button color="inherit">
+                      <Typography  className={classes.button}>Portfolio</Typography>
+                    </Button>
+                  </Link>
+                  <Link  href='/agency/about'>
+                    <Button color="inherit">
+                      <Typography  className={classes.button}>Sobre</Typography>
+                    </Button>
+                  </Link>
+                  <Link  href='/agency/contacts'>
+                    <Button color="inherit">
+                      <Typography  className={classes.button}>Contatos</Typography>
+                    </Button>
+                  </Link>
+                </Box>
             </Toolbar>
         </Container>
       </AppBar>

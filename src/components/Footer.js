@@ -22,6 +22,13 @@ const useStyles = makeStyles()((theme) => {
         },
         marginBox: {
             marginBottom: 5,
+            [theme.breakpoints.down('sm')]: {
+                display: 'flex',
+                flexDirection: 'column',
+            }
+        },
+        socialIcons: {
+            marginBottom: 5,
         }
     }
 })
@@ -36,7 +43,7 @@ const Footer = () => {
 
     return(
         <Container maxWidth='xg' className={classes.container}>
-            <Box className={classes.marginBox}>
+            <Box className={classes.socialIcons}>
                 <IconButton aria-label="whatsapp" color="secondary" onClick={() => handleRedirect('https://api.whatsapp.com/send?1=pt_BR&phone=553892622985')}>
                     <WhatsAppIcon />
                 </IconButton>
@@ -66,7 +73,12 @@ const Footer = () => {
 
             <Box className={classes.boxCopy}>
                 <CopyrightIcon color='secondary' fontSize='small' style={{marginRight: '2px'}}/>
-                <Typography component='span' variant='caption' color='secondary' style={{marginLeft: '2px'}}>
+                <Typography 
+                    component='span' 
+                    variant='caption' 
+                    color='secondary' 
+                    style={{marginLeft: '2px'}}
+                >
                     2023 Matheus Amon dos Santos Ferreira
                 </Typography>
             </Box>

@@ -21,6 +21,9 @@ const useStyles = makeStyles()((theme) => {
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+        }
       },
       boxSocial:{
         display: 'flex',
@@ -28,6 +31,12 @@ const useStyles = makeStyles()((theme) => {
       },
       socialIcon: {
         width: 100,
+      },
+      title: {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.8em',
+        },
+        fontWeight: 'bold',
       }
     }
 })
@@ -37,7 +46,7 @@ const Contacts = () => {
     return(
         <TemplateDefault>
             <Container maxWidth='md' className={classes.container}>
-                <Typography component='h1' variant='h3' align='center' color='white'>
+                <Typography component='h1' variant='h3' align='center' color='white' className={classes.title}>
                     Contatos
                 </Typography>
             </Container>

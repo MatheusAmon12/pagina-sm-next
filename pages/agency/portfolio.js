@@ -23,6 +23,12 @@ const useStyles = makeStyles()((theme) => {
         flexDirection: 'column',
         marginBottom: 20
       },
+      title: {
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '1.8em',
+        },
+        fontWeight: 'bold',
+      }
     }
 })
 
@@ -32,7 +38,7 @@ const Portfolio = () => {
     return(
         <TemplateDefault>
             <Container maxWidth='md' className={classes.container}>
-                <Typography component='h1' variant='h3' align='center' color='white'>
+                <Typography component='h1' variant='h3' align='center' color='white' className={classes.title}>
                     Meus trabalhos
                 </Typography>
             </Container>

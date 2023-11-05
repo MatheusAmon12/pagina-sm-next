@@ -9,6 +9,12 @@ const useStyles = makeStyles()((theme) => {
     container: {
       marginBottom: theme.spacing(6),
     },
+    title: {
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '1.8em',
+      },
+      fontWeight: 'bold',
+    }
   }
 })
 
@@ -18,7 +24,7 @@ const Home = () => {
   return(
     <TemplateDefault>
       <Container maxWidth='md' className={classes.container}>
-        <Typography component='h1' variant='h3' align='center' color='white'>
+        <Typography component='h1' variant='h3' align='center' color='white' className={classes.title}>
           Conheça meus serviços
         </Typography>
       </Container>
