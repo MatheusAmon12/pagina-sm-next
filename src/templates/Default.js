@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import { makeStyles } from 'tss-react/mui'
 
 import Header from '../components/Header'
@@ -7,10 +7,7 @@ import Footer from '../components/Footer'
 const useStyles = makeStyles()((theme) => {
     return {
       container: {
-        padding: theme.spacing(8, 0, 30),
-        backgroundImage: 'url(../images/backgroundHome.jpg)',
-        backgroundSize: 'cover',
-        height: '100%',
+        backgroundColor: theme.palette.background.default,
       }
     }
  })
@@ -21,9 +18,9 @@ const Default = ({ children }) => {
     return(
         <>
             <Header />
-            <Box className={classes.container}>
+            <Container maxWidth='xl' className={classes.container} disableGutters>
                 { children }
-            </Box>
+            </Container>
             <Footer />
         </>
     )

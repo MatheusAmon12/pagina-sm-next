@@ -15,17 +15,19 @@ const useStyles = makeStyles()((theme) => {
             boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
             backdropFilter: 'blur(7.7px)',
             border: '1px solid rgba(225, 138, 212, 0.06)',
-            borderRadius: 10,
+            borderRadius: 5,
+            height: '350px',
+            boxShadow: '10px 10px 25px -7px rgba(0,0,0,0.75)',
         },
         text: {
-            fontSize: '1.1em',
-            textShadow: '1.5px 1.5px 1px rgba(72,72,72,0.2)',
+            fontSize: '14px',
+            lineHeight: '24px',
             
         },
         title: {
+            fontSize: '16px',
             fontWeight: 'bold',
-            textShadow: '1.5px 1.5px 1px rgba(72,72,72,0.4)',
-            color: theme.palette.primary.main,
+            color: 'black',
         }
     }
 })
@@ -34,10 +36,10 @@ const CardInfo = ({ title, text, image}) => {
   const { classes } = useStyles()
 
   return (
-    <Card sx={{ maxWidth: 445 }} className={classes.cardBackground}>
+    <Card sx={{ maxWidth: '250px' }} className={classes.cardBackground}>
         <CardMedia
             component="img"
-            height="250"
+            height="150"
             image={image}
             alt={title}
         />
