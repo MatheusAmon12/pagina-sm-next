@@ -236,7 +236,7 @@ const Home = () => {
           <Container maxWidth='md'>
 
             <Button variant="contained" color='primary' className={classes.button} style={{display: 'block', margin: '0 auto'}}>
-              Lista completa
+              Mais informações
             </Button>
 
           </Container>

@@ -18,7 +18,7 @@ const Default = ({ children }) => {
     return(
         <>
             <Header />
-            <Container maxWidth='xl' className={classes.container} disableGutters>
+            <Container maxWidth={`100vw`} className={classes.container} disableGutters>
                 { children }
             </Container>
             <Footer />

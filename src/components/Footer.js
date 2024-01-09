@@ -42,7 +42,7 @@ const Footer = () => {
     }
 
     return(
-        <Container maxWidth='xl' className={classes.container}>
+        <Container maxWidth={`100vw`} className={classes.container}>
             <Box className={classes.socialIcons}>
                 <IconButton aria-label="whatsapp" color="secondary" onClick={() => handleRedirect('https://api.whatsapp.com/send?1=pt_BR&phone=553892622985')}>
                     <WhatsAppIcon />
