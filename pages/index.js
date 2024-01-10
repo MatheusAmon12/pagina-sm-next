@@ -103,7 +103,7 @@ const Home = () => {
 
   return(
     <TemplateDefault>
-      <Container maxWidth='xl' className={classes.bgTop} disableGutters>
+      <Container maxWidth={`100vw`} className={classes.bgTop} disableGutters>
 
         <Container maxWidth='md' className={classes.container}>
           <img src='images/logoAgencia.png' className={classes.logo}/>
@@ -131,7 +131,7 @@ const Home = () => {
 
       </Container>       
 
-      <Container maxWidth='xl' className={classes.bgMid} disableGutters>
+      <Container maxWidth={`100vw`} className={classes.bgMid} disableGutters>
 
         <Container>
 
@@ -192,7 +192,7 @@ const Home = () => {
 
       </Container>         
 
-      <Container maxWidth='xl' disableGutters>
+      <Container maxWidth={`100vw`} disableGutters>
 
         <Container>
 
@@ -244,7 +244,7 @@ const Home = () => {
 
       </Container>
 
-      <Container maxWidth='xl' disableGutters>
+      <Container maxWidth={`100vw`} disableGutters>
 
         <Container>
 

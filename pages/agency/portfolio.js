@@ -29,7 +29,6 @@ const useStyles = makeStyles()((theme) => {
         },
         fontSize: '38px',
         fontWeight: 'bold',
-        color: theme.palette.primary.main,
       },
       content: {
         marginTop: '24px',
@@ -68,7 +67,7 @@ const Portfolio = () => {
 
             <Container maxWidth={`100vw`} className={classes.backgroundCamilaMartins}>
                 <Container maxWidth='md' className={classes.container}>
-                    <Typography component='h1' color='white' className={classes.title}>
+                    <Typography component='h1' color='primary' className={classes.title}>
                         Studio Camila Martins
                     </Typography>
 
@@ -91,7 +90,7 @@ const Portfolio = () => {
 
             <Container maxWidth={`100vw`} className={classes.backgroundBakaninha}>
                 <Container maxWidth='md' className={classes.container}>
-                    <Typography component='h1' color='white' className={classes.title}>
+                    <Typography component='h1' color='secondary' className={classes.title}>
                         Bar e Pizzaria Bakaninha
                     </Typography>
 
@@ -104,7 +103,7 @@ const Portfolio = () => {
                     </Typography>
 
                     <Button onClick={() => handleRedirect('https://www.instagram.com/barepizzariabakaninha/')}>
-                        <Typography component='span' variant='caption' color='secondary'>
+                        <Typography component='span' variant='caption' color='primary'>
                             ver instagram
                         </Typography>
                     </Button>
