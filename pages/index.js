@@ -224,7 +224,7 @@ const Home = () => {
           <Grid container spacing='70px' style={{paddingBottom: '40px'}} justifyContent={'center'}>
             <Grid item md={4} sm={12}>
               <Box>
-                <img src='/images/logoBakaninha.png' className={classes.clientsImage}/>
+                <img src='/images/logoPizzariaBakaninha.png' className={classes.clientsImage}/>
                 <Typography component='p' align='center' fontWeight={'bold'} color={'primary'}>
                   Bar e Pizzaria Bakaninha
                 </Typography>
