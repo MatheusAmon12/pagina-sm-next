@@ -1,5 +1,6 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import { makeStyles } from 'tss-react/mui'
+import { useRouter } from 'next/router'
 
 import TemplateDefault from '../src/templates/Default'
 import CardInfo from '../src/components/Card'
@@ -100,7 +101,12 @@ const useStyles = makeStyles()((theme) => {
 
 const Home = () => {
   const { classes } = useStyles()
+  const router = useRouter()
 
+  const handleRedirect = (url) => {
+    router.push(url)
+  }
+  
   return(
     <TemplateDefault>
       <Container maxWidth={`100vw`} className={classes.bgTop} disableGutters>
@@ -123,7 +129,12 @@ const Home = () => {
 
         <Container maxWidth='md'>
 
-          <Button variant="contained" color='primary' className={classes.button}>
+          <Button 
+            variant="contained" 
+            color='primary' 
+            className={classes.button}
+            onClick={() => handleRedirect('https://wa.me/5538992622985/?text=Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços?')}
+          >
             Contrate-nos
           </Button>
 
@@ -183,7 +194,13 @@ const Home = () => {
 
           <Container maxWidth='md'>
 
-            <Button variant="contained" color='primary' className={classes.button} style={{display: 'block', margin: '0 auto'}}>
+            <Button 
+              variant="contained" 
+              color='primary' 
+              className={classes.button} 
+              style={{display: 'block', margin: '0 auto'}}
+              onClick={() => handleRedirect('https://wa.me/5538992622985/?text=Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços?')}
+            >
               Lista completa
             </Button>
 
@@ -235,7 +252,13 @@ const Home = () => {
 
           <Container maxWidth='md'>
 
-            <Button variant="contained" color='primary' className={classes.button} style={{display: 'block', margin: '0 auto'}}>
+            <Button 
+              variant="contained" 
+              color='primary' 
+              className={classes.button} 
+              style={{display: 'block', margin: '0 auto'}}
+              onClick={() => handleRedirect('/agency/portfolio')}
+            >
               Mais informações
             </Button>
 
@@ -286,7 +309,13 @@ const Home = () => {
 
           <Container maxWidth='md'>
 
-            <Button variant="contained" color='primary' className={classes.button} style={{display: 'block', margin: '0 auto'}}>
+            <Button 
+              variant="contained" 
+              color='primary' 
+              className={classes.button} 
+              style={{display: 'block', margin: '0 auto'}}
+              onClick={() => handleRedirect('https://wa.me/5538992622985/?text=Gostaria%20de%20fazer%20um%20orçamento%20com%20você.')}
+            >
               Fazer orçamento
             </Button>
 

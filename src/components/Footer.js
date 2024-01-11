@@ -48,7 +48,7 @@ const Footer = () => {
                     <WhatsAppIcon />
                 </IconButton>
 
-                <IconButton aria-label="istagram" color="secondary" onClick={() => handleRedirect('https://www.instagram.com/liviagabriela.sm/')}>
+                <IconButton aria-label="istagram" color="secondary" onClick={() => handleRedirect('https://www.instagram.com/liviamelgaco.sm/')}>
                     <InstagramIcon />
                 </IconButton>
             </Box>
@@ -79,7 +79,7 @@ const Footer = () => {
                     color='secondary' 
                     style={{marginLeft: '2px'}}
                 >
-                    2023 Matheus Amon dos Santos Ferreira
+                    2024 Agência LM
                 </Typography>
             </Box>
 

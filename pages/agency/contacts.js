@@ -1,15 +1,13 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import { makeStyles } from 'tss-react/mui'
+import { useRouter } from 'next/router'
 
 import TemplateDefault from '../../src/templates/Default'
 
 const useStyles = makeStyles()((theme) => {
     return{
-      container: {
-        marginBottom: theme.spacing(6),
-      },
       box:{
-        background: 'rgba(225, 138, 212, 0.17)',
+        background: 'rgba(99, 29, 118, 0.9)',
         borderRs: '16px',
         boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
         backdropFilter: 'blur(7.7px)',
@@ -43,38 +41,51 @@ const useStyles = makeStyles()((theme) => {
 
 const Contacts = () => {
     const { classes } = useStyles()
+    const router = useRouter()
+    
+    const handleRedirect = (url) => {
+        router.push(url)
+    }
+
     return(
         <TemplateDefault>
-            <Container maxWidth='md' className={classes.container}>
-                <Typography component='h1' variant='h3' align='center' color='white' className={classes.title}>
-                    Contatos
-                </Typography>
-            </Container>
+            <Container maxWidth={'100vw'} style={{padding: '240px 0'}}>
+                <Container maxWidth='md'>
+                    <Box className={classes.box}>
+                        <Box className={classes.boxSocial}>
+                            <img src='/images/instagramLogo.png' className={classes.socialIcon}/>
 
-            <Container maxWidth='md'>
-                <Box className={classes.box}>
-                    <Box className={classes.boxSocial}>
-                        <img src='/images/instagramLogo.png' className={classes.socialIcon}/>
-                        <Typography 
-                            component='span' 
-                            variant='h6' 
-                            style={{marginLeft: '-10px', textShadow: '2px 2px 6px rgba(72,72,72,0.48)'}} color='white'
-                        >
-                            @liviagabriela.sm
-                        </Typography>
+                            <Button 
+                                style={{textTransform: 'lowercase'}} 
+                                onClick={() => handleRedirect('https://www.instagram.com/liviamelgaco.sm/')}
+                            >
+                                <Typography
+                                    component='span'
+                                    variant='h6'
+                                    style={{marginLeft: '-10px'}} color='white'
+                                >
+                                    @liviagabriela.sm
+                                </Typography>
+                            </Button>
+                        </Box>
+                        <Box className={classes.boxSocial}>
+                            <img src='/images/whatsappLogo.png'className={classes.socialIcon}/>
+
+                            <Button
+                                style={{textTransform: 'lowercase'}} 
+                                onClick={() => handleRedirect('https://wa.me/5538992622985/?text=Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços?')}
+                            >
+                                <Typography
+                                    component='span'
+                                    variant='h6'
+                                    style={{marginLeft: '-10px'}} color='white'
+                                >
+                                    38 9 9262-2985
+                                </Typography>
+                            </Button>
+                        </Box>
                     </Box>
-
-                    <Box className={classes.boxSocial}>
-                        <img src='/images/whatsappLogo.png'className={classes.socialIcon}/>
-                        <Typography 
-                            component='span' 
-                            variant='h6' 
-                            style={{marginLeft: '-10px', textShadow: '2px 2px 6px rgba(72,72,72,0.48)'}} color='white'
-                        >
-                            38 9 9262-2985
-                        </Typography>
-                    </Box>          
-                </Box>
+                </Container>
             </Container>
         </TemplateDefault>
     )
