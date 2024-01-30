@@ -39,7 +39,7 @@ const Home = () => {
   return(
     <TemplateDefault>
       <Container maxWidth={`100vw`} className={classes.bgTop} disableGutters>
-        <Header />
+        <Header color={'#F6F8FF'} />
 
         <Container maxWidth='md' className={classes.container}>
           <motion.div

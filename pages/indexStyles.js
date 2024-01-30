@@ -44,6 +44,7 @@ const useStyles = makeStyles()((theme) => {
         backgroundImage: 'url(/images/background-top.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed',
         [theme.breakpoints.down('sm')]: {
           backgroundImage: 'url(/images/background-top-sm.png)'
         },
@@ -51,13 +52,10 @@ const useStyles = makeStyles()((theme) => {
       bgMid: {
         backgroundImage: 'url(/images/background-mid.png)',
         backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
         [theme.breakpoints.down('sm')]: {
           backgroundImage: 'url(/images/background-mid-sm.png)'
         },
-      },
-      bgBottom: {
-        backgroundImage: 'url(/images/background-bottom.png)',
-        backgroundSize: 'cover'
       },
       clientsImage: {
         width: '250px',

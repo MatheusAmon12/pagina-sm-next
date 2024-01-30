@@ -43,7 +43,7 @@ export default function ButtonAppBar({color}) {
                 </Typography>
                 <Box>
                   <Link href='/'>
-                    <Button color="inherit">
+                    <Button color='inherit'>
                       <Typography color={color} className={classes.button}>Home</Typography>
                     </Button>
                   </Link>
