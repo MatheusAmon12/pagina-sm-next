@@ -66,7 +66,7 @@ const Portfolio = () => {
     return(
         <TemplateDefault>
             <Container maxWidth={`100vw`} className={classes.backgroundCamilaMartins}>
-                <Header />
+                <Header color={'secondary'} />
                 <Container maxWidth='md' className={classes.container}>
                     <Typography component='h1' color='primary' className={classes.title}>
                         Studio Camila Martins
