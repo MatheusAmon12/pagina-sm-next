@@ -41,8 +41,9 @@ const useStyles = makeStyles()((theme) => {
         boxShadow: '-2px 10px 40px 4px rgba(19,3,31,0.45)',
       },
       bgTop: {
-        backgroundImage: 'url(/images/background-top.png)',
+        backgroundImage: 'url(/images/background-top.jpg)',
         backgroundSize: 'cover',
+        backgroundPosition: 'center center',
         [theme.breakpoints.down('sm')]: {
           backgroundImage: 'url(/images/background-top-sm.png)'
         },

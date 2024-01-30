@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import useStyles from './indexStyles'
 
 import TemplateDefault from '../src/templates/Default'
+import Header from '../src/components/Header'
 import CardInfo from '../src/components/Card'
 import Carousel from '../src/components/Carousel'
 
@@ -38,6 +39,7 @@ const Home = () => {
   return(
     <TemplateDefault>
       <Container maxWidth={`100vw`} className={classes.bgTop} disableGutters>
+        <Header />
 
         <Container maxWidth='md' className={classes.container}>
           <motion.div

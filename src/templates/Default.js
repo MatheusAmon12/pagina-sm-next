@@ -1,7 +1,6 @@
 import { Box, Container } from '@mui/material'
 import { makeStyles } from 'tss-react/mui'
 
-import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const useStyles = makeStyles()((theme) => {
@@ -17,7 +16,6 @@ const Default = ({ children }) => {
 
     return(
         <>
-            <Header />
             <Container maxWidth={`100vw`} className={classes.container} disableGutters>
                 { children }
             </Container>

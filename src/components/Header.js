@@ -35,7 +35,7 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{backgroundColor: 'transparent', boxShadow: 'none'}}>
         <Container maxWidth='lg' className={classes.container}>
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
