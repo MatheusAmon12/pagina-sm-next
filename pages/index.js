@@ -121,7 +121,7 @@ const Home = () => {
                 <CardInfo
                   title='Identidade Estratégica'
                   text='Estruturação do seu perfil, transformando-o em um Instagram autêntico e com personalidade.'
-                  image='/images/idEstrategica.png'
+                  image='/images/idEstrategica.jpg'
                 
                 /> 
               </motion.div>
@@ -138,7 +138,7 @@ const Home = () => {
                 <CardInfo
                   title='Gerencimento Mensal'
                   text='Estratégias montadas com base em seus objetivos de marca. Com uma equipe completa de administração.'
-                  image='/images/gerenciamentoMensal.png'
+                  image='/images/gerenciamentoMensal.jpg'
                 
                 />
               </motion.div>
@@ -155,7 +155,7 @@ const Home = () => {
                 <CardInfo
                   title='Landing Pages'
                   text='Landing Pages pesonalizadas e com a cara do seu negócio para impulsionar seus resultados.'
-                  image='/images/landingPage.png'
+                  image='/images/landingPage.jpg'
                 
                 />
               </motion.div>
@@ -172,7 +172,7 @@ const Home = () => {
                 <CardInfo
                   title='Criação de Logo'
                   text='Logos minimalistas e modernas que transmitem a essência da sua empresa.'
-                  image='/images/criacaoLogo.png'
+                  image='/images/criacaoLogo.jpg'
                 
                 />
               </motion.div>
@@ -228,7 +228,7 @@ const Home = () => {
                 </motion.div>
               </Box>
             </Grid>
-            
+
             <Grid item md={4} sm={12}>
               <Box>
                 <motion.div
