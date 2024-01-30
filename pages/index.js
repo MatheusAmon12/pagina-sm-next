@@ -221,6 +221,21 @@ const Home = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: .2, ease: 'easeIn' }}
                 >
+                  <img src='/images/HelanoMariz.jpg'  className={classes.clientsImage}/>
+                  <Typography component='p' align='center' fontWeight={'bold'} color={'primary'}>
+                    Helano Mariz
+                  </Typography>
+                </motion.div>
+              </Box>
+            </Grid>
+            
+            <Grid item md={4} sm={12}>
+              <Box>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: .2, ease: 'easeIn' }}
+                >
                   <img src='/images/logoPizzariaBakaninha.png' className={classes.clientsImage}/>
                   <Typography component='p' align='center' fontWeight={'bold'} color={'primary'}>
                     Bar e Pizzaria Bakaninha
@@ -244,20 +259,6 @@ const Home = () => {
               </Box>
             </Grid>
 
-            <Grid item md={4} sm={12}>
-              <Box>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: .2, ease: 'easeIn' }}
-                >
-                  <img src='/images/logoClinica.png'  className={classes.clientsImage}/>
-                  <Typography component='p' align='center' fontWeight={'bold'} color={'primary'}>
-                    Clínica São Sebastião
-                  </Typography>
-                </motion.div>
-              </Box>
-            </Grid>
           </Grid>
 
           <Container maxWidth='md'>
