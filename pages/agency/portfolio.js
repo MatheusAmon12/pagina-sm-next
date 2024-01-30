@@ -3,6 +3,7 @@ import { makeStyles } from 'tss-react/mui'
 import { useRouter } from 'next/router'
 
 import TemplateDefault from '../../src/templates/Default'
+import Header from '../../src/components/Header'
 
 const useStyles = makeStyles()((theme) => {
     return{
@@ -39,12 +40,12 @@ const useStyles = makeStyles()((theme) => {
       backgroundCamilaMartins: {
         backgroundImage: 'url(/images/studioCamilaBG.png)',
         backgroundSize: 'cover',
-        paddingTop: '40px',
         paddingBottom: '40px',
       },
       backgroundBakaninha: {
-        backgroundImage: 'url(/images/bakaninhaBG.png)',
+        backgroundImage: 'url(/images/bakaninhaBG.jpg)',
         backgroundSize: 'cover',
+        backgroundPosition: 'center center',
         paddingTop: '40px',
         paddingBottom: '120px',
       }
@@ -64,23 +65,23 @@ const Portfolio = () => {
 
     return(
         <TemplateDefault>
-
             <Container maxWidth={`100vw`} className={classes.backgroundCamilaMartins}>
+                <Header />
                 <Container maxWidth='md' className={classes.container}>
                     <Typography component='h1' color='primary' className={classes.title}>
                         Studio Camila Martins
                     </Typography>
 
-                    <Typography component='p' color='black' className={classes.content}>
+                    <Typography component='p' color='secondary' className={classes.content}>
                         Durante 6 meses trabalhamos no perfil do Studio Camila Martins. A primeira coisa que fizemos foi reposicionar e criar uma nova identidade para marca, conhecendo quem era o público alvo e seus objetivos. 
                     </Typography>
 
-                    <Typography component='p' color='black' className={classes.content}>
+                    <Typography component='p' color='secondary' className={classes.content}>
                         De um perfil infantilizado e sem estratégia, fomos para um perfil profissional e com personalidade. Criamos uma estratégia de conteúdos alinhada com esse novo posicionamento e conseguimos aumentar o engajamento da conta e aumentar o número de seguidores.
                     </Typography>
 
                     <Button onClick={() => handleRedirect('https://www.instagram.com/camilamartins.studio/')}>
-                        <Typography component='span' variant='caption' color='secondary'>
+                        <Typography component='span' variant='caption' color='primary'>
                             ver instagram
                         </Typography>
                     </Button>
@@ -90,7 +91,7 @@ const Portfolio = () => {
 
             <Container maxWidth={`100vw`} className={classes.backgroundBakaninha}>
                 <Container maxWidth='md' className={classes.container}>
-                    <Typography component='h1' color='secondary' className={classes.title}>
+                    <Typography component='h1' color='#FFCC00' className={classes.title}>
                         Bar e Pizzaria Bakaninha
                     </Typography>
 
@@ -103,7 +104,7 @@ const Portfolio = () => {
                     </Typography>
 
                     <Button onClick={() => handleRedirect('https://www.instagram.com/barepizzariabakaninha/')}>
-                        <Typography component='span' variant='caption' color='primary'>
+                        <Typography component='span' variant='caption' color='#FFCC00'>
                             ver instagram
                         </Typography>
                     </Button>
