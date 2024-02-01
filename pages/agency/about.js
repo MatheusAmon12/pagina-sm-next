@@ -66,15 +66,15 @@ const About = () => {
                         SOBRE
                       </Typography>
                       <Typography className={classes.title}>
-                        Lívia Gabriela O Melgaço
+                        Lívia Melgaço
                       </Typography>
                       <img src='/images/agenciaLM.png' className={classes.img}/>
                       <Typography component='p' variant='body1' className={classes.text}>
-                          Somos a Agência LM, fundada por Lívia Gabriela Oliveira Melgaço no ano de 2022. Um microemprendimento de Marketing Digital jovem que entrega resultandos grandes. Desde a fundação a nossa missão é oferecer autenticidade as marcas que assinam contrato, além de produzir conteúdos únicos que tem como base a estratégia. Não oferecemos apenas um post, mas uma estratégia para atingir seu objetivos.
+                          A Agência LM foi por Lívia Melgaço no ano de 2022. Um emprendimento de Marketing Digital jovem que entrega resultandos grandes. Desde a fundação a nossa missão é oferecer autenticidade as marcas que assinam contrato, além de produzir conteúdos únicos que tem como base a estratégia. Não oferecemos apenas um post, mas uma estratégia para atingir seu objetivos.
                           <br/><br/>
                       </Typography>
                       <Typography component='p' variant='body1' className={classes.text}>
-                          Lívia Gabriela Oliveira Melgaço: Social Media, estrategista e especialista em gerenciamento e posicionamento no Instagram;
+                          Lívia Melgaço: Social Media, estrategista e especialista em gerenciamento e posicionamento no Instagram;
                           <br/><br/>
                       </Typography>
                       <Typography component='p' variant='body1' className={classes.text}>

@@ -3,9 +3,17 @@ import { makeStyles } from 'tss-react/mui'
 import { useRouter } from 'next/router'
 
 import TemplateDefault from '../../src/templates/Default'
+import Header from '../../src/components/Header'
 
 const useStyles = makeStyles()((theme) => {
     return{
+      contactBg: {
+        backgroundImage: 'url(/images/contactBG.jpg)',
+        backgroundAttachment: 'fixed',
+        [theme.breakpoints.down('sm')]: {
+            backgroundImage: 'url(/images/contactBG-sm.jpg)'
+        }
+      },
       box:{
         background: 'rgba(99, 29, 118, 0.9)',
         borderRs: '16px',
@@ -49,8 +57,9 @@ const Contacts = () => {
 
     return(
         <TemplateDefault>
-            <Container maxWidth={'100vw'} style={{padding: '240px 0'}}>
-                <Container maxWidth='md'>
+            <Container maxWidth={'100vw'} className={classes.contactBg}>
+                <Header color={'#F6F8FF'} />
+                <Container maxWidth='md' style={{padding: '160px 0px'}}>
                     <Box className={classes.box}>
                         <Box className={classes.boxSocial}>
                             <img src='/images/instagramLogo.png' className={classes.socialIcon}/>
