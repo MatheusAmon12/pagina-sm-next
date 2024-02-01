@@ -15,6 +15,9 @@ const useStyles = makeStyles()((theme) => {
     button: {
       textDecoration: 'none !important',
       fontWeight: 'bold',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '12px'
+      }
     },
     toolbar: {
       [theme.breakpoints.down('sm')]: {

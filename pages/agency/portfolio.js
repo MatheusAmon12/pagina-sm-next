@@ -36,11 +36,19 @@ const useStyles = makeStyles()((theme) => {
         width: '430px',
         lineHeight: '32px',
         fontSize: '22px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '16px',
+            lineHeight: '26px',
+            width: '350px',
+        }
       },
       backgroundCamilaMartins: {
         backgroundImage: 'url(/images/studioCamilaBG.png)',
         backgroundSize: 'cover',
         paddingBottom: '40px',
+        [theme.breakpoints.down('sm')]: {
+            backgroundImage: 'url(/images/studioCamilaBG-sm.jpg)'
+        }
       },
       backgroundBakaninha: {
         backgroundImage: 'url(/images/bakaninhaBG.jpg)',
@@ -48,6 +56,9 @@ const useStyles = makeStyles()((theme) => {
         backgroundPosition: 'center center',
         paddingTop: '40px',
         paddingBottom: '120px',
+        [theme.breakpoints.down('sm')]: {
+            backgroundImage: 'url(/images/bakaninhaBG-sm.jpg)'
+        }
       }
     }
 })

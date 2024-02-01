@@ -46,7 +46,7 @@ const useStyles = makeStyles()((theme) => {
         backgroundPosition: 'center center',
         backgroundAttachment: 'fixed',
         [theme.breakpoints.down('sm')]: {
-          backgroundImage: 'url(/images/background-top-sm.png)'
+          backgroundImage: 'url(/images/background-top-sm.jpg)'
         },
       },
       bgMid: {
