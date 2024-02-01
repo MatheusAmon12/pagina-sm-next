@@ -14,15 +14,15 @@ import carousel12 from '../public/images/carousel12.png'
 import carousel13 from '../public/images/carousel13.png'
 import carousel14 from '../public/images/carousel14.png'
 
-import carousel21 from '../public/images/mockup-stories-1.png'
-import carousel22 from '../public/images/mockup-stories-2.png'
-import carousel23 from '../public/images/mockup-stories-3.png'
-import carousel24 from '../public/images/mockup-stories-4.png'
+import carousel21 from '../public/images/mockup-stories-1.jpg'
+import carousel22 from '../public/images/mockup-stories-2.jpg'
+import carousel23 from '../public/images/mockup-stories-3.jpg'
+import carousel24 from '../public/images/mockup-stories-4.jpg'
 
-import carousel31 from '../public/images/insights1.png'
-import carousel32 from '../public/images/insights2.png'
-import carousel33 from '../public/images/insights3.png'
-import carousel34 from '../public/images/insights4.png'
+import carousel31 from '../public/images/insights1.jpg'
+import carousel32 from '../public/images/insights2.jpg'
+import carousel33 from '../public/images/insights3.jpg'
+import carousel34 from '../public/images/insights4.jpg'
 
 const imagesInsights = [carousel31, carousel32, carousel33, carousel34]
 const imagesStories = [carousel21, carousel22, carousel23, carousel24]
