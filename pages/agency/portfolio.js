@@ -27,6 +27,7 @@ const useStyles = makeStyles()((theme) => {
       title: {
         [theme.breakpoints.down('sm')]: {
           fontSize: '1.8em',
+          width: '350px',
         },
         fontSize: '38px',
         fontWeight: 'bold',
