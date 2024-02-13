@@ -66,7 +66,7 @@ const Contacts = () => {
 
                             <Button 
                                 style={{textTransform: 'lowercase'}} 
-                                onClick={() => handleRedirect('https://www.instagram.com/liviamelgaco.sm/')}
+                                onClick={() => handleRedirect('https://www.instagram.com/agencialm.marketing/')}
                             >
                                 <Typography
                                     component='span'

@@ -48,7 +48,7 @@ const Footer = () => {
                     <WhatsAppIcon />
                 </IconButton>
 
-                <IconButton aria-label="istagram" color="primary" onClick={() => handleRedirect('https://www.instagram.com/liviamelgaco.sm/')}>
+                <IconButton aria-label="istagram" color="primary" onClick={() => handleRedirect('https://www.instagram.com/agencialm.marketing/')}>
                     <InstagramIcon />
                 </IconButton>
             </Box>
