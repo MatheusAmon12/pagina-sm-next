@@ -25,9 +25,9 @@ Este projeto foi desenvolvido por meio de um trabalho voluntário, onde fui resp
 
 - `./pages` contém todas páginas que serão roteadas pelo NextJS
     - `./pages/agency`
-        - `./pages/agency/About`
-        - `./pages/agency/Contacts`
-        - `./pages/agency/Portfolio`
+        - `./pages/agency/about`
+        - `./pages/agency/contacts`
+        - `./pages/agency/portfolio`
     - `./pages/index`
 - `./public` conté todas as imagens utilizados no desenvolvimento do layout
 - `./src` contém as peças e utilitários essenciais para composição e funcionamento do projeto
