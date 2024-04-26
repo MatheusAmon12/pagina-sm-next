@@ -1,9 +1,9 @@
 import { Container, Typography, Button } from '@mui/material'
 import { useRouter } from 'next/router'
 
-import TemplateDefault from '../../src/templates/Default'
-import Header from '../../src/components/Header'
-import useStyles from '../../styles/PortfolioStyles'
+import TemplateDefault from '../../../src/templates/Default'
+import Header from '../../../src/components/Header'
+import useStyles from '../../../styles/PortfolioStyles'
 
 const Portfolio = () => {
     const { classes } = useStyles()

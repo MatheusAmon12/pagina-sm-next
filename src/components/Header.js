@@ -50,17 +50,17 @@ export default function ButtonAppBar({color}) {
                       <Typography color={color} className={classes.button}>Home</Typography>
                     </Button>
                   </Link>
-                  <Link  href='/agency/Portfolio'>
+                  <Link  href='/agency/portfolio'>
                     <Button color="inherit">
                       <Typography color={color}  className={classes.button}>Portfolio</Typography>
                     </Button>
                   </Link>
-                  <Link  href='/agency/About'>
+                  <Link  href='/agency/about'>
                     <Button color="inherit">
                       <Typography color={color}  className={classes.button}>Sobre</Typography>
                     </Button>
                   </Link>
-                  <Link  href='/agency/Contacts'>
+                  <Link  href='/agency/contacts'>
                     <Button color="inherit">
                       <Typography color={color}  className={classes.button}>Contatos</Typography>
                     </Button>

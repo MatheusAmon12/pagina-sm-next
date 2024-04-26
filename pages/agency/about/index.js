@@ -1,8 +1,8 @@
 import { Box, Container, Typography } from '@mui/material'
 
-import TemplateDefault from '../../src/templates/Default'
-import Header from '../../src/components/Header'
-import useStyles from '../../styles/AboutStyles'
+import TemplateDefault from '../../../src/templates/Default'
+import Header from '../../../src/components/Header'
+import useStyles from '../../../styles/AboutStyles'
 
 const About = () => {
     const { classes } = useStyles()

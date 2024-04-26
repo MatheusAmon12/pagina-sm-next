@@ -1,9 +1,9 @@
 import { Box, Button, Container, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 
-import TemplateDefault from '../../src/templates/Default'
-import Header from '../../src/components/Header'
-import useStyles from '../../styles/ContactsStyles'
+import TemplateDefault from '../../../src/templates/Default'
+import Header from '../../../src/components/Header'
+import useStyles from '../../../styles/ContactsStyles'
 
 const Contacts = () => {
     const { classes } = useStyles()

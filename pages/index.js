@@ -254,7 +254,7 @@ const Home = () => {
                 color='primary'
                 className={classes.button}
                 style={{display: 'block', margin: '0 auto'}}
-                onClick={() => handleRedirect('/agency/Portfolio')}
+                onClick={() => handleRedirect('/agency/portfolio')}
               >
                 Mais informações
               </Button>
