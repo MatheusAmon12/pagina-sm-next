@@ -2,31 +2,31 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 
-import useStyles from './indexStyles'
+import useStyles from '../styles/indexStyles'
 
 import TemplateDefault from '../src/templates/Default'
 import Header from '../src/components/Header'
 import CardInfo from '../src/components/Card'
 import Carousel from '../src/components/Carousel'
 
-import carousel11 from '../public/images/carousel11.png'
-import carousel12 from '../public/images/carousel12.png'
-import carousel13 from '../public/images/carousel13.png'
-import carousel14 from '../public/images/carousel14.png'
+import carouselPosts_1 from '../public/images/carousel11.png'
+import carouselPosts_2 from '../public/images/carousel12.png'
+import carouselPosts_3 from '../public/images/carousel13.png'
+import carouselPosts_4 from '../public/images/carousel14.png'
 
-import carousel21 from '../public/images/mockup-stories-1.jpg'
-import carousel22 from '../public/images/mockup-stories-2.jpg'
-import carousel23 from '../public/images/mockup-stories-3.jpg'
-import carousel24 from '../public/images/mockup-stories-4.jpg'
+import carouselStories_1 from '../public/images/mockup-stories-1.jpg'
+import carouselStories_2 from '../public/images/mockup-stories-2.jpg'
+import carouselStories_3 from '../public/images/mockup-stories-3.jpg'
+import carouselStories_4 from '../public/images/mockup-stories-4.jpg'
 
-import carousel31 from '../public/images/insights1.jpg'
-import carousel32 from '../public/images/insights2.jpg'
-import carousel33 from '../public/images/insights3.jpg'
-import carousel34 from '../public/images/insights4.jpg'
+import carouselInsights_1 from '../public/images/insights1.jpg'
+import carouselInsights_2 from '../public/images/insights2.jpg'
+import carouselInsights_3 from '../public/images/insights3.jpg'
+import carouselInsights_4 from '../public/images/insights4.jpg'
 
-const imagesInsights = [carousel31, carousel32, carousel33, carousel34]
-const imagesStories = [carousel21, carousel22, carousel23, carousel24]
-const imagesFeed = [carousel11, carousel12, carousel13, carousel14]
+const imagesInsights = [carouselInsights_1, carouselInsights_2, carouselInsights_3, carouselInsights_4]
+const imagesStories = [carouselStories_1, carouselStories_2, carouselStories_3, carouselStories_4]
+const imagesFeed = [carouselPosts_1, carouselPosts_2, carouselPosts_3, carouselPosts_4]
 
 const Home = () => {
   const { classes } = useStyles()
