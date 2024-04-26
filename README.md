@@ -49,4 +49,4 @@ Este projeto foi desenvolvido por meio de um trabalho voluntário, onde fui resp
 
 ## Link do site
 
-O deploy do projeto foi feito no Vercel, pode acessá-lo em [Agência LM](https://pagina-sm-next-apqvbc3ph.vercel.app)
+O deploy do projeto foi feito no Vercel, pode acessá-lo em [Agência LM](https://pagina-sm-next.vercel.app)
